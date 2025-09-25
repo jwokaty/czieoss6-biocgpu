@@ -1,18 +1,16 @@
 ---
-title: "GPU-accelerated Computing in Bioconductor"
+title: "Overview"
 format: html
 editor: visual
 ---
 
-## Overview
-
-### Purpose
+## Purpose
 
 To support GPU-accelerated Bioconductor packages through continuous integration,
 user-friendly packaging of system-level dependencies, and foundational packages
 for Bioconductor GPU programming.
 
-### Summary
+## Summary
 
 Bioconductor is an open-source, open-development project for the statistical
 analysis and comprehension of high-throughput genomic data. Through a long

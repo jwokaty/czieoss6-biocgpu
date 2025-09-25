@@ -1,9 +1,9 @@
 ---
-title: "Projects with topic: czieoss6-biocgpu"
+title: "Projects"
 format: html
 ---
 
-## Projects in GitHub the topic `czieoss6-biocgpu`.
+Projects in GitHub the topic `czieoss6-biocgpu`
 
 ```{bash projects, echo = FALSE}
 TOPIC=czieoss6-biocgpu

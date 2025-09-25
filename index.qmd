@@ -1,7 +1,6 @@
 ---
 title: "GPU-accelerated Computing in Bioconductor"
 format: html
-editor: visual
 ---
 
 This site automatically tracks GitHub repositories associated with [CZI EOSS
