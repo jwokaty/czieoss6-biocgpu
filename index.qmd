@@ -1,0 +1,47 @@
+---
+title: "GPU-accelerated Computing in Bioconductor"
+format: html
+editor: visual
+---
+
+This site automatically tracks GitHub repositories associated with [CZI EOSS
+6](https://chanzuckerberg.com/eoss/proposals/?cycle=6) **GPU-accelerated
+Computing in Bioconductor** to the [CUNY Graduate School of Public Health and
+Health Policy](https://sph.cuny.edu).
+
+PI: [Levi Waldron](https://scholar.google.com/citations?user=-Bfm-2IAAAAJ&hl=en&oi=ao)
+
+## Navigation
+
+* [Overview](overview.qmd): Project abstract
+* [Projects](projects.qmd): A table of all repositories found for the tracked topic.
+* [Recent Commits](commits.qmd): A blog-style feed of the latest commits from all listed projects.
+
+## Relevance to Public Health
+
+The large number of software packages (\>2,100), community developers (\>1,900),
+annual installations (\>10 million unique IP addresses), and full-text citations
+in PubMed (\> 67,000 to date) highlight the value of Bioconductor to biomedical
+research and its use in clinical practice. The latest advancements in
+experimental techniques for high-throughput biology have led to a marked
+increase in the heterogeneity and complexity of analytical approaches; prime
+examples are single-cell multi-omics and imaging-based assays, often consisting
+of terabytes of raw data. GPU computing has emerged as a clear enabler in
+certain fields of science, such as large language models and protein structure
+prediction, for which it provides essential improvements over the traditional
+paradigm of single-threaded CPU-based analysis. Unfortunately, GPU adoption in
+the context of omics sciences is lagging behind. It is thus paramount to provide
+an approachable platform to test the reliability of code run on GPUs (Aim 1) and
+to ship software packages that work on a variety of systems even in the presence
+of complex system-level dependencies (Aim 2). Finally, a set of foundational
+packages and data structures natively supporting GPU computations (Aim 3)
+represent an essential prerequisite for the development of new, fast approaches
+to the analysis of high-throughput biomedical data, such as single-cell and
+spatial omics.
+
+### Acknowledgements
+
+This website is based on
+[https://waldronlab.io/ITCR-bioconductor/](https://waldronlab.io/ITCR-bioconductor)
+and the
+[Public Microbiome Project](https://waldronlab.io/PublicMicrobiomeProject/).

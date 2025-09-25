@@ -1,0 +1,68 @@
+---
+title: "GPU-accelerated Computing in Bioconductor"
+format: html
+editor: visual
+---
+
+## Overview
+
+### Purpose
+
+To support GPU-accelerated Bioconductor packages through continuous integration,
+user-friendly packaging of system-level dependencies, and foundational packages
+for Bioconductor GPU programming.
+
+### Summary
+
+Bioconductor is an open-source, open-development project for the statistical
+analysis and comprehension of high-throughput genomic data. Through a long
+development history, spanning more than 20 years of activity, the project has
+established itself as a cornerstone of bioinformatic analyses. Bioconductor is
+committed to reliability and interoperability, achieved by checking all packages
+daily for three main platforms, Linux, MacOS, and Windows. In this project, we
+propose to expand and future-proof the existing Bioconductor infrastructure to
+enable computationally-intensive analytic workflows, accelerating them through
+GPU libraries. Thirty Bioconductor packages currently support GPU computations,
+either by directly interfacing with the CUDA or OpenCL libraries or through an
+external call to Python packages such as TensorFlow and PyTorch. These packages
+are currently not tested on GPU by the Bioconductor build system, effectively
+undermining their reliability for end users. In this project, we propose to
+strengthen Bioconductor’s GPU capabilities through the following aims.
+
+\(1\) Extension of Bioconductor’s existing continuous integration (CI)
+infrastructure[^1][^2] to test GPU code and to readily alert package maintainers
+of compilation problems. The proposed additional infrastructure will be
+developed as a series of containerized components to ensure a high degree of
+reproducibility. In addition to the batch service offered by CI nodes, package
+developers will retain the ability to interactively test software on their own
+workstations through containers, with the guarantee of accessing a uniform
+testing environment. A second advantage of this strategy is to provide an easy
+path to scale the system in the face of usage peaks, such as those required
+every six months to prepare for the new release. While it might be possible to
+size the build nodes to absorb such a high load, it is more efficient to resort
+to cloud computing resources on an as-needed basis to complement the on-premise
+infrastructure. Containers represent a popular and well-supported abstraction to
+implement this kind of elastic scaling.
+
+[^1]: [Bioconductor Build System repository](https://github.com/Bioconductor/BBS)
+[^2]: [Bioconductor Build System Report](https://bioconductor.org/checkResults)
+
+\(2\) Implementation of flexible and user-friendly packaging of system-level
+dependencies. The existing framework (BiocManager) manages R-level dependencies
+(packages) but relies on external handling of any other dependencies, e.g.
+systems libraries. This places a high (sometimes effectively insurmountable)
+burden on users. One solution is packaging such dependencies themselves into an
+R package. However, this practice adds a constraint on a specific version of the
+library being embedded and dramatically increases the number of dependencies.
+Here, we propose to leverage existing package managers (e.g., Conda) to provide
+an easy path to install Bioconductor packages that require external system
+dependencies.
+
+\(3\) Development of foundational packages for GPU programming. We will extend
+existing Bioconductor data structures (e.g., SingleCellExperiment) to seamlessly
+integrate GPU processing. Specifically, we will implement a CUDA backend for
+common operations in single-cell omics applicable to both dense and sparse
+matrices. We will demonstrate the utility of these foundational packages by
+developing a proof-of-principle workflow for single-cell analysis, implementing
+in GPU a basic analysis workflow described in the [OSCA
+book](https://bioconductor.org/books/release/OSCA/).

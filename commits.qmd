@@ -1,0 +1,52 @@
+---
+title: "Commits to Projects with Topic czieoss6-biocgpu"
+format: html
+---
+
+Commits to projects in GitHub the topic `czieoss6-biocgpu`.
+
+```{bash projects, echo = FALSE}
+TOPIC=czieoss6-biocgpu
+LIMIT=100
+if [ ! /tmp/projects.txt ]; then
+  gh search repos --visibility public --topic ${TOPIC} --include-forks false --limit ${LIMIT} > /tmp/projects.txt
+fi
+```
+
+```{bash, echo = FALSE}
+if [ /tmp/commits.txt ]; then
+  truncate -s 0 /tmp/commits.txt
+fi
+
+repositories=($(cat /tmp/projects.txt | awk '{print $1}'))
+
+for repository in "${repositories[@]}"
+do
+  gh api repos/${repository}/commits --template '{{range.}}{{.sha }}{{"\t"}}{{.html_url}}{{"\t"}}"{{.commit.author.name}}"{{"\t"}}{{.commit.author.date}}{{"\t"}}"{{.commit.message}}"{{"\n"}}{{end}}' >> /tmp/commits.txt
+done
+```
+
+```{r read-commits, echo = FALSE, message = FALSE}
+library(dplyr)
+library(lubridate)
+
+columns <- c("sha", "url", "author", "date", "message")
+commits <- read.csv("/tmp/commits.txt", sep = "\t", col.names = columns,
+                    header = FALSE)
+commits$date <- gsub("T|Z", " ", commits$date) |>
+    lubridate::as_datetime(format="%Y-%m-%d %H:%M:%S ")
+commits <- commits |>
+    arrange(desc(date))
+commits["repository"] <- gsub("https://github.com/|/commit/[a-z0-9]+$", "",
+                              commits$url)
+```
+
+```{r list-commits, echo = FALSE, message = FALSE}
+library(DT)
+
+display_df <- data.frame(Repository = paste0("<a href='", commits$url, "'>", 
+                                             commits$repository, "</a>"),
+                         Date = commits$date,
+                         Message = commits$message)
+DT::datatable(display_df, escape = FALSE)
+```
