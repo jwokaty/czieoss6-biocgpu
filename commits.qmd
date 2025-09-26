@@ -41,6 +41,10 @@ commits["repository"] <- gsub("https://github.com/|/commit/[a-z0-9]+$", "",
                               commits$url)
 ```
 
+```{r found}
+print(commits)
+```
+
 ```{r list-commits, echo = FALSE, message = FALSE}
 library(DT)
 
