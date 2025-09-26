@@ -41,16 +41,15 @@ commits["repository"] <- gsub("https://github.com/|/commit/[a-z0-9]+$", "",
                               commits$url)
 ```
 
-```{bash found}
-cat /tmp/commits.txt
-```
-
 ```{r list-commits, echo = FALSE, message = FALSE}
 library(DT)
 
-display_df <- data.frame(Repository = paste0("<a href='", commits$url, "'>", 
-                                             commits$repository, "</a>"),
-                         Date = commits$date,
-                         Message = commits$message)
-DT::datatable(display_df, escape = FALSE)
+if (dim(commits)[1] >=1) {
+  display_df <- data.frame(Repository = paste0("<a href='", commits$url, "'>", 
+                                               commits$repository, "</a>"),
+                           Date = commits$date,
+                           Message = commits$message)
+  DT::datatable(display_df, escape = FALSE)
+}
+
 ```
