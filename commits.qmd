@@ -3,7 +3,7 @@ title: "Recent Commits"
 format: html
 ---
 
-Commits to projects in GitHub the topic `czieoss6-biocgpu`.
+Commits to projects in GitHub with the topic `czieoss6-biocgpu`.
 
 ```{bash projects, echo = FALSE}
 TOPIC=czieoss6-biocgpu
@@ -41,8 +41,8 @@ commits["repository"] <- gsub("https://github.com/|/commit/[a-z0-9]+$", "",
                               commits$url)
 ```
 
-```{r found}
-print(commits)
+```{bash found}
+cat /tmp/commits.txt
 ```
 
 ```{r list-commits, echo = FALSE, message = FALSE}
