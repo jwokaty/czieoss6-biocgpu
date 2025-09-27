@@ -17,7 +17,7 @@ library(BiocPkgTools)
 devel <- BiocPkgTools::biocPkgList(version = "devel")
 release <- BiocPkgTools::biocPkgList(version = "release")
 columns <- c("repository", "description", "visibility", "updated")
-projects <- read.csv("/tmp/projects.txt", sep = "\t", col.names = columns,
+projects <- read.csv("projects.txt", sep = "\t", col.names = columns,
                      header = FALSE)
 ```
 

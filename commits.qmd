@@ -31,7 +31,7 @@ library(dplyr)
 library(lubridate)
 
 columns <- c("sha", "url", "author", "date", "message")
-commits <- read.csv("/tmp/commits.txt", sep = "\t", col.names = columns,
+commits <- read.csv("commits.txt", sep = "\t", col.names = columns,
                     header = FALSE)
 commits$date <- gsub("T|Z", " ", commits$date) |>
     lubridate::as_datetime(format="%Y-%m-%d %H:%M:%S ")
