@@ -8,7 +8,7 @@ Commits to projects in GitHub with the topic `czieoss6-biocgpu`.
 ```{bash projects, echo = FALSE}
 TOPIC=czieoss6-biocgpu
 LIMIT=100
-if [ ! projects.txt ]; then
+if [ ! -f projects.txt ]; then
   gh search repos --visibility public --topic ${TOPIC} --include-forks false --limit ${LIMIT} > projects.txt
 fi
 ```
