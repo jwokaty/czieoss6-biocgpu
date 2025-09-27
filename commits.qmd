@@ -28,14 +28,10 @@ done
 
 ```{r read-commits, echo = FALSE, message = FALSE}
 library(dplyr)
-library(lubridate)
 
 columns <- c("sha", "url", "author", "date", "message")
 commits <- read.csv("commits.txt", sep = "\t", col.names = columns,
-                    header = FALSE)
-commits$date <- gsub("T|Z", " ", commits$date) |>
-    lubridate::as_datetime(format="%Y-%m-%d %H:%M:%S ")
-commits <- commits |>
+                    header = FALSE) |>
     arrange(desc(date))
 commits["repository"] <- gsub("https://github.com/|/commit/[a-z0-9]+$", "",
                               commits$url)
@@ -47,8 +43,8 @@ library(DT)
 if (dim(commits)[1] >=1) {
   display_df <- data.frame(Repository = paste0("<a href='", commits$url, "'>", 
                                                commits$repository, "</a>"),
-                           Date = commits$date,
-                           Message = commits$message)
+                           Message = commits$message,
+                           Updated  = commits$date)
   DT::datatable(display_df, escape = FALSE)
 }
 

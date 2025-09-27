@@ -32,7 +32,6 @@ jobs:
         with:
           packages:
             any::dplyr
-            any::lubridate
             any::rmarkdown
             any::knitr
             any::DT
