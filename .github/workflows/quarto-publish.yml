@@ -36,6 +36,7 @@ jobs:
             any::rmarkdown
             any::knitr
             any::DT
+            any::BiocPkgTools
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
       # Run `quarto publish gh-pages` once locally
