@@ -8,7 +8,7 @@ Projects in GitHub with the topic `czieoss6-biocgpu`.
 ```{bash projects, echo = FALSE}
 TOPIC=czieoss6-biocgpu
 LIMIT=100
-gh search repos --visibility public --topic ${TOPIC} --include-forks false --limit ${LIMIT} > /tmp/projects.txt
+gh search repos --visibility public --topic ${TOPIC} --include-forks false --limit ${LIMIT} > projects.txt
 ```
 
 ```{r read-projects, echo = FALSE, message = FALSE}

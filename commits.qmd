@@ -8,21 +8,21 @@ Commits to projects in GitHub with the topic `czieoss6-biocgpu`.
 ```{bash projects, echo = FALSE}
 TOPIC=czieoss6-biocgpu
 LIMIT=100
-if [ ! /tmp/projects.txt ]; then
-  gh search repos --visibility public --topic ${TOPIC} --include-forks false --limit ${LIMIT} > /tmp/projects.txt
+if [ ! projects.txt ]; then
+  gh search repos --visibility public --topic ${TOPIC} --include-forks false --limit ${LIMIT} > projects.txt
 fi
 ```
 
 ```{bash, echo = FALSE}
-if [ /tmp/commits.txt ]; then
-  truncate -s 0 /tmp/commits.txt
+if [ commits.txt ]; then
+  truncate -s 0 commits.txt
 fi
 
-repositories=($(cat /tmp/projects.txt | awk '{print $1}'))
+repositories=($(cat projects.txt | awk '{print $1}'))
 
 for repository in "${repositories[@]}"
 do
-  gh api repos/${repository}/commits --template '{{range.}}{{.sha }}{{"\t"}}{{.html_url}}{{"\t"}}"{{.commit.author.name}}"{{"\t"}}{{.commit.author.date}}{{"\t"}}"{{.commit.message}}"{{"\n"}}{{end}}' >> /tmp/commits.txt
+  gh api repos/${repository}/commits --template '{{range.}}{{.sha }}{{"\t"}}{{.html_url}}{{"\t"}}"{{.commit.author.name}}"{{"\t"}}{{.commit.author.date}}{{"\t"}}"{{.commit.message}}"{{"\n"}}{{end}}' >> commits.txt
 done
 ```
 
