@@ -33,7 +33,7 @@ if (dim(projects)[1] >= 1) {
                    repository = paste0("https://github.com/", projects$repository),
                    description = projects$description,
                    owner = gsub("/.*$", "", projects$repository),
-                   updated = as.Date(projects$updated, format = "%Y-%m-%d"))
+                   updated = projects$updated)
   df <- df |>
     dplyr::mutate(in_bioc = package %in% release$Package | package %in% devel$Package) |>
     dplyr::mutate(bioc_url = ifelse(in_bioc,
@@ -52,7 +52,7 @@ if (dim(projects)[1] >= 1) {
                                                "</a>"),
                            Description = df$description,
                            Owner = df$owner,
-                           "Last updated" = df$updated)
+                           Updated = df$updated)
 
   DT::datatable(display_df, escape = FALSE)
 }
