@@ -5,7 +5,7 @@ format: html
 
 Commits to projects in GitHub with the topic `czieoss6-biocgpu`.
 
-```{bash projects, echo = FALSE}
+```{bash projects, echo = FALSE, message = FALSE}
 TOPIC=czieoss6-biocgpu
 LIMIT=100
 if [ ! -f projects.txt ]; then
@@ -13,7 +13,7 @@ if [ ! -f projects.txt ]; then
 fi
 ```
 
-```{bash, echo = FALSE}
+```{bash, echo = FALSE, message = FALSE}
 if [ commits.txt ]; then
   truncate -s 0 commits.txt
 fi
