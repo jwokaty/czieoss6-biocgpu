@@ -32,7 +32,7 @@
     "href": "commits.html",
     "title": "Recent Commits",
     "section": "",
-    "text": "Commits to projects in GitHub with the topic czieoss6-biocgpu.\n\n\ncat: /tmp/projects.txt: No such file or directory"
+    "text": "Commits to projects in GitHub with the topic czieoss6-biocgpu.\n\n\ncat: projects.txt: No such file or directory"
   },
   {
     "objectID": "index.html",
