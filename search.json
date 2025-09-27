@@ -32,7 +32,7 @@
     "href": "commits.html",
     "title": "Recent Commits",
     "section": "",
-    "text": "Commits to projects in GitHub with the topic czieoss6-biocgpu.\n\n\ncat: projects.txt: No such file or directory"
+    "text": "Commits to projects in GitHub with the topic czieoss6-biocgpu."
   },
   {
     "objectID": "index.html",
@@ -60,7 +60,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Projects in GitHub with the topic czieoss6-biocgpu."
+    "text": "Projects in GitHub with the topic czieoss6-biocgpu.\nWarning: 3 failed to parse."
   },
   {
     "objectID": "projects.html#support-for-maintainers",
