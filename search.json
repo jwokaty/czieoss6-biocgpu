@@ -67,7 +67,7 @@
     "href": "projects.html#support-for-maintainers",
     "title": "Projects",
     "section": "Support for maintainers",
-    "text": "Support for maintainers\nThe grant funded work to create a new Bioconductor build system (BBS) report for GPU-capable software packages running on machines at the University of Padova, the Dana Farber Cancer Institute, and Jetstream2: * devel BBS GPU Report * release BBS GPU Report\nBioconductor package maintainers can who have packages capable of using GPUs can opt in to the build report by adding a .BBSoptions file with GPU_reliance: required or GPU_reliance: optional as described in the contributions guide."
+    "text": "Support for maintainers\nThe grant funded work to create a new Bioconductor build system (BBS) report for GPU-capable software packages running on machines at the University of Padova, the Dana Farber Cancer Institute, and Jetstream2:\n\ndevel BBS GPU Report\nrelease BBS GPU Report\n\nBioconductor package maintainers can who have packages capable of using GPUs can opt in to the build report by adding a .BBSoptions file with GPU_reliance: required or GPU_reliance: optional as described in the contributions guide."
   },
   {
     "objectID": "projects.html#support-for-users",
