@@ -1,1 +1,1 @@
-Sitemap: https://jwokaty.github.io/czieoss6-biocgpu/sitemap.xml
+Sitemap: https://waldronlab.github.io/czieoss6-biocgpu/sitemap.xml
