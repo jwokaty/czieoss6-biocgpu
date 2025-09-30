@@ -9,6 +9,7 @@ Computing in Bioconductor** to the [CUNY Graduate School of Public Health and
 Health Policy](https://sph.cuny.edu).
 
 PI: [Levi Waldron](https://scholar.google.com/citations?user=-Bfm-2IAAAAJ&hl=en&oi=ao)
+Collaborators: [Gabriele Sales](https://scholar.google.com/citations?user=JPMuaDsAAAAJ&hl=en)
 
 ## Navigation
 
