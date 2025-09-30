@@ -3,7 +3,8 @@ title: "Recent Commits"
 format: html
 ---
 
-Commits to projects in GitHub with the topic `czieoss6-biocgpu`.
+Most recent 30 commits for each repository in GitHub with the topic
+`czieoss6-biocgpu` updated daily.
 
 ```{bash projects, echo = FALSE, message = FALSE}
 TOPIC=czieoss6-biocgpu
