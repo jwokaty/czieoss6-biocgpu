@@ -11,6 +11,9 @@ website:
         text: Projects
       - href: commits.qmd
         text: "Recent Commits"
+    right:
+      - icon: github
+        href: https://github.com/waldronlab/czieoss6-biocgpu
 
 format:
   html:
