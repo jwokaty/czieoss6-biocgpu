@@ -8,8 +8,10 @@ This site automatically tracks GitHub repositories associated with [CZI EOSS
 Computing in Bioconductor** to the [CUNY Graduate School of Public Health and
 Health Policy](https://sph.cuny.edu).
 
-PI: [Levi Waldron](https://scholar.google.com/citations?user=-Bfm-2IAAAAJ&hl=en&oi=ao)
+Leads: [Levi Waldron](https://scholar.google.com/citations?user=-Bfm-2IAAAAJ&hl=en&oi=ao), [Davide Risso](https://scholar.google.com/citations?user=4amGfSYAAAAJ&hl=en)
+
 Collaborators: [Gabriele Sales](https://scholar.google.com/citations?user=JPMuaDsAAAAJ&hl=en)
+
 
 ## Navigation
 
