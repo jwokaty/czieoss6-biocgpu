@@ -18,6 +18,7 @@ Collaborators: [Gabriele Sales](https://scholar.google.com/citations?user=JPMuaD
 * [Overview](overview.qmd): Project abstract
 * [Projects](projects.qmd): A table of all repositories found for the tracked topic.
 * [Recent Commits](commits.qmd): A blog-style feed of the latest commits from all listed projects.
+* [Slides](slides.qmd)
 
 ## Relevance to Public Health
 

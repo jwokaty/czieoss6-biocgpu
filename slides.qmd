@@ -1,0 +1,56 @@
+---
+title: "GPU-accelerated Computing in Bioconductor"
+format: 
+  revealjs:
+    logo: images/bioconductor_logo_cmyk.svg
+    footer: https://czieoss6-biocgpu.waldronlab.io
+    auto-stretch: false
+lightbox: true
+theme: simple
+---
+
+## Purpose
+
+Support GPU-accelerated Bioconductor packages through continuous integration, user-friendly packaging of system-level dependencies, and foundational packages for Bioconductor GPU programming.
+
+## Aims
+
+1.  Extension of Bioconductor’s existing continuous integration (CI) infrastructure.
+2.  Implementation of flexible and user-friendly packaging of system-level dependencies.
+3.  Development of foundational packages for GPU programming
+
+## Accomplishments
+
+## GPU hardware for builds
+
+-   New Nvidia builder testing Bioconductor packages using a [container](https://github.com/Bioconductor/bioconductor_salt)
+-   Exposed GPU Nvidia compiler and system management information
+
+![](images/amarone.png){.lightbox width="40%" fig-align="right"}
+
+## GPU Software build reports
+
+-   [Release](https://bioconductor.org/checkResults/release/bioc-gpu-LATEST/) and [devel](https://bioconductor.org/checkResults/devel/bioc-gpu-LATEST/) reports
+
+![](images/devel_build.png){.lightbox width="40%" fig-align="right"}
+
+----
+
+-   Support for both GPU required and capable Bioconductor packages
+-   Flexibility for maintainers to [opt their packages into the GPU Software builds](https://contributions.bioconductor.org/advanced-build-options.html#gpu-builds)
+-   New [biocViews](https://bioconductor.org/packages/biocViews) `GPU` term to help users find GPU-capable Bioconductor packages
+
+## Current work
+
+## Aim 2: Flexible, user-friendly packaging of system-level dependencies
+
+-   [ronda](https://github.com/sales-lab/ronda) Repackage any R package for distribution via Conda
+-   [Rcollectl-GPU](https://github.com/aminzadenoori/Rcollectl-GPU) Developing a GPU-monitoring R package
+
+## Future work
+
+## Aim 3: Foundational packages for GPU programming
+
+-   Extend Bioconductor data structures to integrate GPU processing.
+-   Implement a CUDA backend for common operations in single-cell omics applicable to both dense and sparse matrices.
+-   Best practices for Bioconductor package maintainers and users.
