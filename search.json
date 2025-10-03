@@ -35,6 +35,69 @@
     "text": "Most recent 30 commits for each repository in GitHub with the topic czieoss6-biocgpu updated daily."
   },
   {
+    "objectID": "slides.html#purpose",
+    "href": "slides.html#purpose",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "Purpose",
+    "text": "Purpose\nSupport GPU-accelerated Bioconductor packages through continuous integration, user-friendly packaging of system-level dependencies, and foundational packages for Bioconductor GPU programming."
+  },
+  {
+    "objectID": "slides.html#aims",
+    "href": "slides.html#aims",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "Aims",
+    "text": "Aims\n\nExtension of Bioconductor’s existing continuous integration (CI) infrastructure.\nImplementation of flexible and user-friendly packaging of system-level dependencies.\nDevelopment of foundational packages for GPU programming"
+  },
+  {
+    "objectID": "slides.html#accomplishments",
+    "href": "slides.html#accomplishments",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "Accomplishments",
+    "text": "Accomplishments"
+  },
+  {
+    "objectID": "slides.html#gpu-hardware-for-builds",
+    "href": "slides.html#gpu-hardware-for-builds",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "GPU hardware for builds",
+    "text": "GPU hardware for builds\n\nNew Nvidia builder testing Bioconductor packages using a container\nExposed GPU Nvidia compiler and system management information"
+  },
+  {
+    "objectID": "slides.html#gpu-software-build-reports",
+    "href": "slides.html#gpu-software-build-reports",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "GPU Software build reports",
+    "text": "GPU Software build reports\n\nRelease and devel reports"
+  },
+  {
+    "objectID": "slides.html#current-work",
+    "href": "slides.html#current-work",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "Current work",
+    "text": "Current work"
+  },
+  {
+    "objectID": "slides.html#aim-2-flexible-user-friendly-packaging-of-system-level-dependencies",
+    "href": "slides.html#aim-2-flexible-user-friendly-packaging-of-system-level-dependencies",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "Aim 2: Flexible, user-friendly packaging of system-level dependencies",
+    "text": "Aim 2: Flexible, user-friendly packaging of system-level dependencies\n\nronda Repackage any R package for distribution via Conda\nRcollectl-GPU Developing a GPU-monitoring R package"
+  },
+  {
+    "objectID": "slides.html#future-work",
+    "href": "slides.html#future-work",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "Future work",
+    "text": "Future work"
+  },
+  {
+    "objectID": "slides.html#aim-3-foundational-packages-for-gpu-programming",
+    "href": "slides.html#aim-3-foundational-packages-for-gpu-programming",
+    "title": "GPU-accelerated Computing in Bioconductor",
+    "section": "Aim 3: Foundational packages for GPU programming",
+    "text": "Aim 3: Foundational packages for GPU programming\n\nExtend Bioconductor data structures to integrate GPU processing.\nImplement a CUDA backend for common operations in single-cell omics applicable to both dense and sparse matrices.\nBest practices for Bioconductor package maintainers and users."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "GPU-accelerated Computing in Bioconductor",
@@ -46,7 +109,7 @@
     "href": "index.html#navigation",
     "title": "GPU-accelerated Computing in Bioconductor",
     "section": "Navigation",
-    "text": "Navigation\n\nOverview: Project abstract\nProjects: A table of all repositories found for the tracked topic.\nRecent Commits: A blog-style feed of the latest commits from all listed projects."
+    "text": "Navigation\n\nOverview: Project abstract\nProjects: A table of all repositories found for the tracked topic.\nRecent Commits: A blog-style feed of the latest commits from all listed projects.\nSlides"
   },
   {
     "objectID": "index.html#relevance-to-public-health",
